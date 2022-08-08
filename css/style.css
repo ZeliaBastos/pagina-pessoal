@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   color: #262644;
   background-color: #ecf0f1;
@@ -8,18 +11,17 @@ body {
   padding: 30px;
   background-image: url(../img/cool-background.png);
   background-position: center;
-  margin: 10px 100px 10px 100px;
+  margin: 30px 150px 10px 150px;
 }
 .topo {
   display: inline-block;
   text-align: center;
 }
-.cabeçalho img {
-  float: left;
-}
+
 .cabeçalho img {
   width: 200px;
   margin-left: 150px;
+  float: left;
 }
 h1,
 h2 {
@@ -36,15 +38,34 @@ h3 {
   color: #2c3e50;
 }
 .container {
+  font-size: 18px;
   background-color: #ecf0f1;
   text-align: justify;
   padding: 20px;
   color: #262644;
-  margin: 130px 150px 10px 150px;
+  margin: 130px 200px 10px 200px;
 }
 
 .icone {
   width: 30px;
+}
+.seta {
+  text-align: center;
+  width: 20px;
+  cursor: pointer;
+}
+.portifolio {
+  display: inline-block;
+}
+.figura {
+  width: 280px;
+  margin: 3px;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.figura:hover {
+  width: 300px;
 }
 .rodapé {
   background-color: #262644;
@@ -56,4 +77,36 @@ h3 {
 }
 .rodapé img {
   display: inline-block;
+  cursor: pointer;
+}
+@media (max-width: 720px) {
+  .cabeçalho {
+    margin: 10px;
+  }
+  .cabeçalho img {
+    width: 120px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  .container {
+    font-size: 18px;
+    background-color: #ecf0f1;
+    text-align: justify;
+    padding: 20px;
+    color: #262644;
+    margin: auto;
+  }
+  .figura {
+    width: 280px;
+    margin: 2px;
+    border-radius: 10px;
+  }
+  .rodapé {
+    margin: auto;
+  }
+  .contatos {
+    text-align: center;
+    margin-top: 50px;
+  }
 }
